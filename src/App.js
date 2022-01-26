@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Navbar from './Navbar';
+import Home from './Home';
+import VisaState from './VisaState';
+import Efect from './Efect';
+import Likes from './Like';
+import Likess from './Likess';
+import Reducer from './Reducer';
+import Efecter from './Efecter';
+import Fetch from './Fetch';
+import Input from './Input';
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Navbar />
+      
+      <div className='content'>
+      <Home></Home>
+      <VisaState />
+      <Reducer />
+    <Likes />
+      
+      <Likess />
+      <div>
+      <Efecter />
+      </div>
+      
+      <Input />
+      
+ <Fetch />
+    </div>
     </div>
   );
 }
